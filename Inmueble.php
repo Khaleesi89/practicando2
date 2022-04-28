@@ -68,5 +68,15 @@ class Inmueble{
         $this->objPersona = $inquilino;
     }
 
-    
+    public function __toString(){
+        $info=" 
+        CODIGO DE REFERENCIA: {$this->getCodReferencia()}
+        NUMERO DE PISO: {$this->getNroPiso()}
+        TIPO DE INMUEBLE: {$this->getTipInmueble()}
+        COSTO MENSUAL: {$this->getCostoMensual()}
+        INQUILINO:  {$this->getObjPersona()}
+        ";
+        return $info;
+        
+    }
 }
