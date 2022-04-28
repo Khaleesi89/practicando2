@@ -66,7 +66,7 @@ class Persona{
         NUMERO DOCUMENTO: {$this->getNroDni()}
         TELEFONO: {$this->getTelefono()}
         ";
-        
+        return $info;
     }
 
 }
