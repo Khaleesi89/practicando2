@@ -79,4 +79,9 @@ class Inmueble{
         return $info;
         
     }
+
+    public function alquilarInmueble($objCliente){
+        
+        $this->setObjPersona($objCliente);
+    }
 }
